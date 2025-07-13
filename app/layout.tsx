@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/footer/Footer";
 
 const montserrat = Montserrat({
   weight: ['100','200','300','400','500','600','700','800','900']
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${montserrat.className}  antialiased`}
       >
+        
         {children}
+       
       </body>
     </html>
   );

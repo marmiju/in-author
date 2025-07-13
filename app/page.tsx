@@ -2,15 +2,14 @@ import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import ShareButton from "./components/sharebutton/ShareButton";
 import { FaSquarePinterest } from "react-icons/fa6";
 import PublisherCard from "./components/publisherCard/PublisherCard";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
 
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center">
+    <div className="min-h-screen relative w-full flex flex-col  items-center">
 
-      {/* start */}
-
-      <div className="bg-orange-900 inline-block p-10 space-y-4 text-white">
+     <div className="bg-orange-900 inline-block p-10 space-y-4 text-white">
 
         {/* short desc */}
         <h3 className="text-center">{`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`}</h3>
@@ -55,6 +54,17 @@ export default function Home() {
         </div>
 
       </div>
+
+     
+
+      {/* end */}
+
+      {/* footer import from components/footer */}
+    
+       <div className="absolute bottom-0 w-full">
+        <Footer />
+       </div>
+      
 
     </div>
   );

@@ -25,10 +25,10 @@ const PublisherCard = ({ name, designation, follower, article }: { name: string,
 
 
             {/* detail section  */}
-            <div className='flex flex-col justify-between  w-full'>
+            <div className='flex flex-col justify-between   w-full'>
                 {/* info */}
-                <div className='flex flex-col'>
-                    <h3 className='text-xl font-medium truncate'>{name}</h3>
+                <div className='flex flex-col overflow-ellipsis'>
+                    <h3 className='text-xl font-medium block  '>{name}</h3>
                     <p className='text-white/50'>{designation}</p>
 
                 </div>
@@ -38,7 +38,6 @@ const PublisherCard = ({ name, designation, follower, article }: { name: string,
                     {/* article */}
                     <Counter count={article} title='article' />
                     <Counter count={follower} title='follower' />
-
 
                 </div>
 
